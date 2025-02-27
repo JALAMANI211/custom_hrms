@@ -251,5 +251,9 @@ fixtures = [
     {
         "doctype": "Custom DocPerm",
         "filters": [["parent", "=", "Employee Training Table"]]
+    },
+    {
+        "doctype": "Workflow",
+        "filters": [["document_type", "=", "Employee Training Table"]]
     }
 ]
