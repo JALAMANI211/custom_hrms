@@ -242,3 +242,14 @@ app_license = "mit"
 # 	"Logging DocType Name": 30  # days to retain logs
 # }
 
+fixtures = [
+    "Custom Field",
+    {
+        "doctype": "Client Script",
+        "filters": [["module", "in", ["custom_hrms"]]]
+    },
+    {
+        "doctype": "Custom DocPerm",
+        "filters": [["parent", "=", "Employee Training Table"]]
+    }
+]

@@ -1,0 +1,95 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-02-27 12:45:08.275225",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_zbem",
+  "employee",
+  "training_type",
+  "trainer",
+  "training_date",
+  "duration",
+  "status",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_zbem",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "training_type",
+   "fieldtype": "Select",
+   "label": "Training Type",
+   "options": "Technical\nSoft Skills\nCompliance"
+  },
+  {
+   "fieldname": "trainer",
+   "fieldtype": "Data",
+   "label": "Trainer"
+  },
+  {
+   "fieldname": "training_date",
+   "fieldtype": "Date",
+   "label": "Training Date"
+  },
+  {
+   "fieldname": "duration",
+   "fieldtype": "Float",
+   "label": "Duration"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "Planned\nOngoing\nCompleted"
+  },
+  {
+   "fieldname": "employee",
+   "fieldtype": "Link",
+   "label": "Employee",
+   "options": "Employee"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Data",
+   "label": "Amended From"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-02-27 15:36:45.165987",
+ "modified_by": "Administrator",
+ "module": "custom_hrms",
+ "name": "Employee Training Table",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Employee",
+   "select": 1,
+   "share": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

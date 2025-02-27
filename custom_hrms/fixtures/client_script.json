@@ -1,0 +1,13 @@
+[
+ {
+  "docstatus": 0,
+  "doctype": "Client Script",
+  "dt": "Employee Training Table",
+  "enabled": 1,
+  "modified": "2025-02-27 14:12:38.698766",
+  "module": "custom_hrms",
+  "name": "Employee Training",
+  "script": "frappe.ui.form.on('Employee Training Table', {\n\ttraining_type: function(frm) {\n        if (frm.doc.training_type == \"Compliance\") {\n            frm.set_df_property('trainer', 'reqd', 1);\n        } else {\n            frm.set_df_property('trainer', 'reqd', 0);\n        }\n    },\n    status: function(frm) {\n        if (frm.doc.status == \"Completed\") {\n            frappe.msgprint(__('Training Completed Successfully!'));\n        }\n    }\n})",
+  "view": "List"
+ }
+]
