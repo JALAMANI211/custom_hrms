@@ -255,5 +255,9 @@ fixtures = [
     {
         "doctype": "Workflow",
         "filters": [["document_type", "=", "Employee Training Table"]]
+    },
+    {
+        "doctype": "Report",
+        "filters": [["report_name", "=", "Training Summary"]]
     }
 ]
